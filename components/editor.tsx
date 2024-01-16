@@ -3,8 +3,7 @@
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 
-export function Editor({id}: {id: string}) {
-  console.log("id",id);
+export function Editor({id}: {id?: string}) {
   
   return (
     <div className="w-full flex flex-col gap-3">

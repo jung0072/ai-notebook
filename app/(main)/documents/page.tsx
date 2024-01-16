@@ -9,6 +9,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import Link from "next/link";
+import { useDatabase } from "@/components/provider/document-provider";
 
 const documents = [
   {
@@ -19,6 +20,9 @@ const documents = [
 ];
 
 export default function DocumentPage() {
+  // const database = useDatabase();
+  // console.log(`DocumentID ( database )===============>`, database);
+
   return (
     <Table>
       <TableCaption>A list of your documents.</TableCaption>
